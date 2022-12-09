@@ -1,0 +1,98 @@
+* {
+  font-family: 'Montserrat', sans-serif;  /*для всех элементов на странице*/
+}
+
+body {
+  background-color: #62c2c8;
+}
+
+.app {
+  background-color:  white;
+  min-height: 80vh;
+  width: 400px;
+  margin: 20px auto;                     /*вся композиция будет в центре*/
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  color: #43a6ad;
+}
+
+input {
+  flex: 1;  /*чтобы растянулочь на ширину страницы*/
+  padding: 8px;
+  margin: 20px;
+  border: 3px solid #62c2c8;
+  font-size: 15px;
+}
+input:focus {
+  border: 3px solid orange;
+  outline: none;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  width: 70%;
+  color: white;
+  font-size: 16px;
+}  
+
+.btn-add {
+  background-color: #65aa06;
+  margin-top: 5px;
+}
+
+.btn-delete {
+  background-color: #d30100;
+  margin-bottom: 5px;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;                              /*убираем лишнее пространство между элементами*/
+  color:  #4b7e05;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box-list {
+  margin-left: 50px;
+}
+.crossed {
+  text-decoration: line-through 2px rgb(226, 0, 0);   /*перечеркивание слова*/
+  background-color: #f0f0f0;
+  width: 260px;
+}
+
+@media all and (max-width: 500px) {
+  .app {
+    width: 350px;
+  }
+
+  .crossed {
+    width: 220px;
+    margin-left: -5px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .app {
+    width: 250px;
+  }
+
+  .crossed {
+    width: 155px;
+    margin-left: -22px;
+  }
+}
+
+
